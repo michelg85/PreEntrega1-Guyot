@@ -31,7 +31,7 @@ const NavBar = () => {
                     </nav>
                 </div>
                 <div className="col-md-6 d-flex justify-content-end align-items-center">
-                    <CartWidget />
+                    <CartWidget/>
                 </div>
             </div>
         </div>

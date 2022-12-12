@@ -2,7 +2,11 @@ import React, { useState } from "react";
 
 const ItemCount = ({stockItems}) => {
     const [counter, setCounter] = useState(1);
-    const [stock, setStock] = useState(stockItems);
+    let [stock, setStock] = useState(stockItems);
+    if (stock === undefined ) {
+        stock = 10
+    }
+
 
     const incrementarStock = () => {
         if (counter < stock) {
