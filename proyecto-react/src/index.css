@@ -50,17 +50,7 @@ background-color: #f5ebdc;
  text-align: center;
 }
 
-navbar-toggle {
-  position: relative;
-  float: right;
-  margin-right: 15px;
-  padding: 10px 10px;
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
-  background-color: #848484;  
-  border: 1px solid transparent;
-  border-radius: 5px;
-}
+
 
 
 
