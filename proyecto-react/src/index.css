@@ -4,9 +4,13 @@ padding: 0;
 }
 
 body {
-color: #000000;
-background-color: #f2f2f2;
+color: #020202;
+background-image: url("../public/images/fondo2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 font-family: 'Montserrat', sans-serif;
+font-weight: bold;
 font-size: 1.5rem;
 }
 

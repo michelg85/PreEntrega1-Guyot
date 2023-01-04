@@ -7,7 +7,7 @@ const Footer = () => {
             <hr/>
 <div className="row">
     <div className="col-md-6">
-        <img src={"images/taiko.png"} alt="Logo Taiko" width="150"/>
+        <a href="./"> <img src={"images/taiko.png"} alt="Logo Taiko" width="150"/></a>
     </div>
     <div className="col-md-6 text-end">
         <p>

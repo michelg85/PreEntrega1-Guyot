@@ -16,19 +16,19 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" aria-current="page" to={"/category/tablas"}>Tablas</NavLink>
+                                        <h2><NavLink className="nav-link badge rounded-pill text-bg-dark" aria-current="page" to={"/category/tablas"}>Tablas</NavLink></h2>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to={"/category/ceviche"}>Ceviches</NavLink>
+                                    <h2><NavLink className="nav-link badge rounded-pill text-bg-dark" to={"/category/ceviche"}>Ceviches</NavLink></h2>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to={"/category/rolls"}>Rolls</NavLink>
+                                    <h2><NavLink className="nav-link badge rounded-pill text-bg-dark" to={"/category/rolls"}>Rolls</NavLink></h2>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to={"/category/wok"}>Woks</NavLink>
+                                    <h2><NavLink className="nav-link badge rounded-pill text-bg-dark" to={"/category/wok"}>Woks</NavLink></h2>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to={"/category/entradas"}>Entradas</NavLink>
+                                    <h2><NavLink className="nav-link badge rounded-pill text-bg-dark" to={"/category/entradas"}>Entradas</NavLink></h2>
                                     </li>
                                 </ul>
 
