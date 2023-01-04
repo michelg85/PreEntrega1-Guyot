@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {CartContext} from "./context/CartContext";
+import {CartContext} from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -10,8 +10,8 @@ const Cart = () => {
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <div class="alert alert-danger" role="alert">No se encontraron Productos en el Carrito!</div>
-                        <Link to={"/"} className="btn fondoNaranja">Volver a la Página Principal</Link>
+                        <div class="alert alert-danger" role="alert">Productos eliminados correctamente!</div>
+                        <Link to={"/"} className="btn fondoNaranja">Volver a la página principal</Link>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ const Cart = () => {
                                 <td colSpan={2}>&nbsp;</td>
                                 <td className="text-center">Suma Total</td>
                                 <td className="text-center"><b>${sumTotal()}</b></td>
-                                <td>&nbsp;</td>
+                                <td className="text-end"><Link to={"/checkout"} className="btn fondoNaranja" title="Finalizar Compra">Finalizar Compra</Link></td>
                             </tr>
                         </tbody>
                     </table>

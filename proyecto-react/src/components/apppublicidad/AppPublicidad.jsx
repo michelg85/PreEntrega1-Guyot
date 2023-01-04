@@ -3,7 +3,7 @@ import React from "react";
 const AppPublicidad = () => {
     return (
         <div className="container-fluid fondoBlanco">
-        <div className="container pt-5">
+        <div className="container pt-6">
 <div className="row">
     <div className="col-md-6 text-center">
     <img src={"images/BongoCat.gif"} alt={"Taiko Gif"} width="480"/>
@@ -12,7 +12,9 @@ const AppPublicidad = () => {
     <div className="col-md-6 d-flex align-items-center">
         <div>
         <h3 className="fs-1">Descargá la APP y disfrutá mucho más por mucho menos</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia enim voluptatum dolore itaque perspiciatis velit blanditiis, unde repudiandae non libero, obcaecati assumenda minus. Laboriosam cum explicabo aperiam eius tempora veniam.</p>
+        <p>El mejor sushi de Olivos llegó para quedarse! Platos originales, cocina fusión y mucho más! 
+            Por reservas comunicarse al 11.6619.6119 o enviar un mail a: taikosushi@gmail.com.
+        </p>
     </div>
     </div>
 </div>
