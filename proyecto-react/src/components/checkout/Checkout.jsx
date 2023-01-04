@@ -36,16 +36,16 @@ const Checkout = () => {
                 <div className="col">
                     <form>
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}} />
+                            <label for="nombre" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido" onInput={(e) => {setNombre(e.target.value)}} />
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}} />
+                            <label for="email" class="form-label">Mail</label>
+                            <input type="text" class="form-control" id="email" placeholder="Ingrese su mail" onInput={(e) => {setEmail(e.target.value)}} />
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
+                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
                         <button type="button" onClick={generarOrden} class="btn fondoNegro">Crear Orden</button>
                     </form>
