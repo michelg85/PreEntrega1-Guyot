@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import { addDoc, collection, doc, getFirestore, updateDoc, writeBatch } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
     const {cart, clear, sumTotal, cartTotal} = useContext(CartContext);
@@ -23,9 +24,6 @@ const Checkout = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((snapShot) => {
             setOrderId(snapShot.id);
-            const orderDoc = doc(db, "orders", snapShot.id); 
-            updateDoc(orderDoc, {total: order.total * 0.9}); 
-
             clear();
         });
     }
@@ -35,23 +33,23 @@ const Checkout = () => {
             <div className="row my-5">
                 <div className="col">
                     <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido" onInput={(e) => {setNombre(e.target.value)}} />
+                        <div className="mb-3">
+                            <label htmlFor="nombre" className="form-label">Nombre</label>
+                            <input type="text" className="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}} />
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Mail</label>
-                            <input type="text" class="form-control" id="email" placeholder="Ingrese su mail" onInput={(e) => {setEmail(e.target.value)}} />
+                        <div className="mb-3">
+                            <label htmlFor="email" className="form-label">Email</label>
+                            <input type="text" className="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}} />
                         </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
+                        <div className="mb-3">
+                            <label htmlFor="telefono" className="form-label">Teléfono</label>
+                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
-                        <button type="button" onClick={generarOrden} class="btn fondoNegro">Crear Orden</button>
+                        <button type="button" onClick={generarOrden} className="btn fondoNegro">Generar Orden</button>
                     </form>
                 </div>
                 <div className="col">
-                    <table class="table">
+                    <table className="table">
                         <tbody>
                             {cart.map(item => (
                                 <tr key={item.id}>
@@ -71,10 +69,7 @@ const Checkout = () => {
             </div>
             <div className="row my-5">
                 <div className="col text-center">
-                    {orderId ? <div class="alert alert-success" role="alert">
-                        <h1>Felicitaciones!</h1>
-                        <p>Tu Número de Orden es: {orderId}</p>
-                    </div> : ""}
+                    {orderId ? <Navigate to={"/thankyou/" + orderId} /> : ""}
                 </div>
             </div>
         </div>
