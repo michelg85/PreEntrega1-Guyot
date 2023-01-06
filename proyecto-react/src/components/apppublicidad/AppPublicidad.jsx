@@ -11,7 +11,7 @@ const AppPublicidad = () => {
     </div>
     <div className="col-md-6 d-flex align-items-center">
         <div>
-        <h3 className="fs-1">Descargá la APP y disfrutá mucho más por mucho menos</h3>
+        <h3 className="fs-1">Descargá la APP y obtené un 10% en tu primera compra!</h3>
         <p>El mejor sushi de Olivos llegó para quedarse! Platos originales, cocina fusión y mucho más! 
             Por reservas comunicarse al 11.6619.6119 o enviar un mail a: taikosushi@gmail.com.
         </p>
