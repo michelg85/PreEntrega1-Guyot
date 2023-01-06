@@ -8,11 +8,11 @@ const ThankYou = () => {
         <div className="container py-5">
             <div className="row">
                 <div className="col-md-12 text-center">
-                    <div className="alert alert-danger" role="alert">
-                        <h1>Gracias por tu Compra!</h1>
-                        <p>Tu Número de Compra es: <b>{id}</b></p>
+                    <div className="alert alert-dark" role="alert">
+                        <h1>Tu compra se procesó correctamente 😍 </h1>
+                        <p>Tu número de compra es: <b>{id}</b></p>
                     </div>
-                    <Link to={"/"} className="btn btn-dark">Volver a la Página Principal</Link>
+                    <Link to={"/"} className="btn btn-dark">Volver a la página principal</Link>
                 </div>
             </div>
         </div>

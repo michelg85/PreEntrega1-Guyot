@@ -35,17 +35,21 @@ const Checkout = () => {
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}} />
+                            <input type="text" className="form-control" id="nombre" placeholder="Ingrese su nombre" onInput={(e) => {setNombre(e.target.value)}} />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email</label>
-                            <input type="text" className="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}} />
+                            <label htmlFor="email" className="form-label">Mail</label>
+                            <input type="text" className="form-control" id="email" placeholder="Ingrese su mail" onInput={(e) => {setEmail(e.target.value)}} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="telefono" className="form-label">Teléfono</label>
-                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
+                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
-                        <button type="button" onClick={generarOrden} className="btn fondoNegro">Generar Orden</button>
+                        <div className="mb-3">
+                            <label htmlFor="direccion" className="form-label">Dirección</label>
+                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su dirección" onInput={(e) => {setTelefono(e.target.value)}} />
+                        </div>
+                        <button type="button" onClick={generarOrden} className="btn fondoNegro">Generar orden</button>
                     </form>
                 </div>
                 <div className="col">
